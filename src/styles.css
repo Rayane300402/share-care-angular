@@ -28,3 +28,10 @@ app-root {
 .content {
   flex: 1;
 }
+
+
+.toast-info {
+  background-color: var(--dark-red) !important;
+  color: #fff             !important;
+  border-left: 5px solid var(--dark-red) !important;
+}

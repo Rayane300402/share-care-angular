@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "cross-env SASS_QUIET_DEPS=true ng serve",
+    "build": "cross-env SASS_QUIET_DEPS=true ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -18,9 +18,11 @@
     "@angular/platform-browser": "^19.1.5",
     "@angular/platform-browser-dynamic": "^19.1.5",
     "@angular/router": "^19.1.5",
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "@ng-bootstrap/ng-bootstrap": "^18.0.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "cross-env": "^7.0.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

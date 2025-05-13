@@ -1,0 +1,12 @@
+/* default link color */
+.navbar .nav-link {
+  color: var(--dark-red);
+    font-size: 1.2rem;   
+}
+
+/* active page link */
+.navbar .nav-link.active,
+.navbar .nav-link.router-link-active {
+  color: var(--blue-green);
+  text-decoration: underline;
+}

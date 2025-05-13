@@ -1,10 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
 :root {
     --dark-red: #9A2808;
     --blue-green: #208177;
     --bg-color: #D0CAB2;
+    --text-color: #313131;
 }
 
 body {
     background-color: var(--bg-color);
+    font-family: Oswald, sans-serif;
+    color: var(--text-color);
+}
+
+html, body, app-root {
+  height: 100%;
+  margin: 0;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* our middle section grows to fill available space */
+.content {
+  flex: 1;
 }

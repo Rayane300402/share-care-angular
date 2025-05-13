@@ -1,0 +1,24 @@
+.hero-header {
+  position: relative;
+  background: url('../../../../assets/meal-gathering.png') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .hero-content {
+    position: relative;
+    color: #fff;
+    z-index: 1;
+
+    h1, .lead {
+      text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    }
+  }
+}

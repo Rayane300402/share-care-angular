@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { InformationContainerComponent } from './components/information-container/information-container.component';
 import { FlagsComponent } from './components/flags/flags.component';
+import { HeroComponent } from './components/hero-header/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FlagsComponent } from './components/flags/flags.component';
     NavbarComponent,
     FooterComponent,
     InformationContainerComponent,
-    FlagsComponent
+    FlagsComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,

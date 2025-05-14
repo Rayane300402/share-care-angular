@@ -1,2 +1,38 @@
 <app-hero></app-hero>
 <app-flags title="Who are we?"></app-flags>
+<app-information-container
+  shape="wide"
+  img="../../../../assets/about-us.png"
+  title="We’re a group of people passionate about feeding the hungry and reducing food waste"
+  linkText="Meet the team!"
+  linkUrl="/team"   
+></app-information-container>
+
+<app-flags title="Recent Blogs"></app-flags>
+
+<!-- section tat holds 2 information container and not just one  -->
+ <section class="recent-blogs ">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-md-6">
+        <app-information-container
+          shape="square"
+          img="../../../../assets/food_donation.png"
+          title="Sanitary precautions"
+        ></app-information-container>
+      </div>
+      <div class="col-12 col-md-6">
+        <app-information-container
+          shape="square"
+          img="../../../../assets/volunteer.png"
+          title="Meet our volunteers"
+        ></app-information-container>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<app-flags title="What can you do to help"></app-flags>
+
+<app-flags title="Subscribe!"></app-flags>

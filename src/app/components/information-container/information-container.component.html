@@ -1,1 +1,24 @@
-<p>information-container works!</p>
+<div
+  class="feature-card "
+  [ngClass]="shape"
+  [style.aspectRatio]="aspectRatio"
+>
+  <!-- colored “backdrop” block -->
+  <div class="backdrop"></div>
+
+  <!-- white card layer -->
+  <div class="card-content" [ngClass]="{ hoverable: shape==='square' }">
+    <img #imgEl [src]="img" alt="" />
+
+    <div class="text">
+      <h4>{{ title }}</h4>
+      <p *ngIf="body">{{ body }}</p>
+      <a
+        *ngIf="linkText"
+        [href]="linkUrl || '#'"
+    
+        >{{ linkText }}</a
+      >
+    </div>
+  </div>
+</div>

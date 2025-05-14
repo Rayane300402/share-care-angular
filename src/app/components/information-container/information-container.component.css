@@ -1,0 +1,170 @@
+.feature-card {
+  position: relative;
+  width: 100%;
+  margin-top: 4rem !important;
+  /* uses the inline style [style.aspectRatio] */
+
+  .backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: var(--blue-green);
+    z-index: 1;
+    border-radius: 4px;
+  }
+
+  .card-content {
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: transform 0.3s;
+
+    img {
+      width: 100%;
+      height: auto;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    .text {
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h4 {
+        margin: 0 0 0.5rem;
+        color: var(--dark-red);
+        font-size: 2rem;
+      }
+      p {
+        flex: 1;
+        margin: 0 0 1rem;
+        color: var(--text-color);
+      }
+      a {
+        text-decoration: none;
+        color: var(--blue-green);
+        font-size: 1.5rem;
+        padding: 0.5rem 0rem;
+        border-radius: 4px;
+      }
+    }
+
+    &.hoverable {
+      /* for square cards: show body text only on hover */
+      .text p,
+      .text .btn {
+        opacity: 0;
+      }
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+      }
+      &:hover .text p,
+      &:hover .text .btn {
+        opacity: 1;
+        transition: opacity 0.3s 0.2s;
+      }
+    }
+  }
+
+  /* spacing tweak if you want the card 
+     a bit smaller inside the backdrop: */
+  &.wide {
+    width: 90%;
+    max-width: 80rem; /* adjust smaller if you like */
+    margin: 2rem auto; /* auto–center */
+
+    aspect-ratio: unset !important;
+    height: auto !important;
+
+    .backdrop {
+      transform: translate(2rem, -2rem);
+      inset: 0; /* fill the card, not viewport */
+    }
+
+    /* 2) switch the content into a row */
+    .card-content {
+      position: relative;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      transform: none;
+
+      img {
+        flex: 0 0 auto;
+        width: 40%; /* take 40% of the row */
+        max-width: 300px; /* cap it */
+        height: auto;
+        padding: 2rem;
+        margin-left: auto; /* push it to the right */
+        object-fit: cover;
+      }
+
+      .text {
+        width: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertically center your text */
+      }
+    }
+  }
+
+  &.square {
+    width: 90%;
+    max-width: 28rem;
+    margin: 2rem auto;
+    aspect-ratio: 1 / 1;
+    position: relative;
+
+    .backdrop {
+      /* push the colored block left & down */
+      transform: translate(-2rem, -2rem);
+      inset: 0;
+    }
+
+    .card-content {
+      position: absolute;
+      inset: 0;
+      background: #fff;
+      display: grid;
+      /* 2 rows: image takes all extra space, text sits at the bottom */
+      grid-template-rows: 1fr auto;
+      padding: 1rem;
+      box-sizing: border-box;
+
+      img {
+        grid-row: 1;
+        justify-self: center;
+        align-self: start;
+        width: 100%;
+        height: auto;
+        /* padding: 1rem; */
+        object-fit: cover;
+      }
+
+      .text {
+        grid-row: 2;
+        justify-self: center;
+        text-align: center;
+
+        h4 {
+          margin-bottom: 2rem;
+          color: var(--blue-green);
+        }
+      }
+    }
+  }
+
+  &.short .card-content {
+    transform: translate(-0.5rem, -0.5rem);
+  }
+}

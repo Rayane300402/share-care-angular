@@ -5,7 +5,7 @@
   .footer-link {
     color: var(--dark-red);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     &:hover {
       color: var(--blue-green);
       text-decoration: underline;
@@ -17,12 +17,12 @@
   }
 
   .footer-link.small {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .social-link {
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     transition: color 0.2s;
     &:hover {
       color: var(--blue-green);
@@ -30,10 +30,4 @@
   }
 
 
-
 }
-
-  /* .custom-toast{
-    background-color: var(--dark-red) !important;
-    color: white;
-  } */

@@ -14,6 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { InformationContainerComponent } from './components/information-container/information-container.component';
 import { FlagsComponent } from './components/flags/flags.component';
 import { HeroComponent } from './components/hero-header/hero/hero.component';
+import { AboutContainerComponent } from './components/about-container/about-container.component';
+import { SubscribeContainerComponent } from './components/subscribe-container/subscribe-container.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { HeroComponent } from './components/hero-header/hero/hero.component';
     FooterComponent,
     InformationContainerComponent,
     FlagsComponent,
-    HeroComponent
+    HeroComponent,
+    AboutContainerComponent,
+    SubscribeContainerComponent
   ],
   imports: [
     BrowserModule,

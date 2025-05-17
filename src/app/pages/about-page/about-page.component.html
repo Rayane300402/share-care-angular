@@ -1,1 +1,35 @@
-<p>about-page works!</p>
+<app-hero page="about"></app-hero>
+
+
+<section class="about-features container d-flex flex-column justify-center gap-4">
+  <app-about-container
+    overlay="left"
+    [title]="'Why we exist?'"
+    [body]="'More than 2 million Lebanese citizens live under the poverty line, and those numbers are sure to rise exponentially due to the ramifications of the global Covid19 pandemic and its effects on the Lebanese economy.  The poorest population in Lebanon live on the equivalent of $3 a day or $90 a month, while around 400,000 Lebanese live on only $1 a day.  Those were the figures from before the onset of the current economic situation. In face of such a bleak reality, action needs to be taken to level the field and to help the most vulnerable strata of the Lebanese population not to go hungry.'"
+  ></app-about-container>
+
+  <app-about-container
+    overlay="right"
+    [title]="'Our Vision'"
+    [body]="'A Hunger Free Lebanon by 2030 where no one will sleep hungry, without discrimination on the basis of religion, political affiliation, geographic location, sexual orientation, race, or nationality.'"
+  ></app-about-container>
+
+  <app-about-container
+    overlay="left"
+    [title]="'Our Mission'"
+    [body]="'To alleviate hunger and help the environment throughout Lebanon by collecting wasted food of good quality and impartially distribute it to charities and people in need as a means to social progress especially that Poverty has increased by around 51% between 2011 and 2018. '"
+  ></app-about-container>
+
+  <app-about-container
+    overlay="right"
+    [title]="'Get Involved'"
+    [body]="'Volunteer with us, donate non-perishable items, or spread the word on social media to help us reach more people. You can also help us by donating money to help us cover our operational costs. Every little bit helps, and together we can make a difference in the lives of those in need. We are always looking for volunteers to help us with our mission. If you are interested in volunteering, please contact us for more information. We would love to have you on board!'"
+  ></app-about-container>
+
+   <app-about-container
+    overlay="left"
+    [title]="'Where you can find us'"
+    [body]="'You can find us in the following locations: Beirut, Tripoli, Sidon, and Tyre. We are always looking to expand our reach and help more people in need. If you know of a location where we can set up a food distribution center, please contact us!'"
+  ></app-about-container>
+
+</section>

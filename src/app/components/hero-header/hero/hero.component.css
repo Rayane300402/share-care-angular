@@ -1,7 +1,8 @@
 .hero-header {
   /* width: 100vw; */
   position: relative;
-  background: url('../../../../assets/meal-gathering.png') center/cover no-repeat;
+  background: url("../../../../assets/meal-gathering.png") center/cover
+    no-repeat;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -11,7 +12,7 @@
   .overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
   }
 
@@ -20,8 +21,59 @@
     color: #fff;
     z-index: 1;
 
-    h1, .lead {
-      text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    h1,
+    .lead {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     }
   }
+}
+
+.about-header {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 2rem; */
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    p {
+      display: inline-block;
+      margin: 0;
+      font-size: 5rem;
+      font-weight: 600;
+      line-height: 1.1;
+      background-repeat: no-repeat;
+      background-size: 100% 70%;
+      background-position: left bottom;
+      color: #fff;
+    }
+  }
+}
+
+
+.about-header .text p.green-variant {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 40%,
+    var(--blue-green) 40%,
+    var(--blue-green) 100%
+  );
+  padding: 0.2rem 0rem;
+}
+
+.about-header .text p.red-variant {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    var(--dark-red) 50%
+  );
+  margin-left: 7rem;
+  white-space: nowrap;
+  padding: 0.2em 0rem 0.2em 3rem;
 }

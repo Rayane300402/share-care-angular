@@ -1,7 +1,12 @@
 /* default link color */
 .navbar .nav-link {
   color: var(--dark-red);
-    font-size: 1.2rem;   
+  font-size: 1.5rem;
+}
+
+/* on hover */
+.navbar .nav-link:hover {
+  color: var(--blue-green);
 }
 
 /* active page link */
@@ -9,4 +14,45 @@
 .navbar .nav-link.router-link-active {
   color: var(--blue-green);
   text-decoration: underline;
+}
+
+.social-link {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: color 0.2s;
+  &:hover {
+    color: var(--blue-green);
+  }
+}
+
+/* 1) Ensure collapse is a flex column and hidden by height */
+.navbar-collapse {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-end; /* right-align on mobile */
+  overflow: hidden;
+
+  max-height: 0;
+  transition: max-height 0.3s ease;
+
+  .navbar-nav .nav-link {
+    text-align: right;
+  }
+}
+
+.navbar-collapse.show {
+  max-height: 300px;
+}
+
+/* 3) On desktop (≥992px), disable the height hack and restore normal layout */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    max-height: none !important;
+    overflow: visible !important;
+    align-items: center;
+
+    .navbar-nav .nav-link {
+      text-align: left;
+    }
+  }
 }

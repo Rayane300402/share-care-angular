@@ -1,7 +1,21 @@
-<section class="hero-header">
+<section *ngIf="page === 'home'" class="hero-header">
+
   <div class="overlay"></div>
   <div class="hero-content text-center">
     <h1 class="display-4">Welcome to ShareCare</h1>
     <p class="lead">Our aim is to stop hunger and food waste in Lebanon</p>
   </div>
+
+</section>
+
+<section class="about-header" *ngIf="page === 'about'">
+  <div class="text">
+    <p class="green-variant">
+      <span>It's all about</span>
+    </p>
+    <p class="red-variant">
+      <span>the people.</span>
+    </p>
+  </div>
+  <img class="img-fluid" src="../../../../assets/about.png" alt="giving-food" width="64%">
 </section>

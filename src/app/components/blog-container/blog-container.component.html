@@ -1,0 +1,12 @@
+<div class="blog-card feature-card square hoverable">
+  <div class="backdrop"></div>
+
+  <div class="card-content">
+    <div class="text">
+      <small class="text-muted">{{ post.date }} • {{ post.author }}</small>
+      <h4>{{ post.title }}</h4>
+      <p>{{ post.excerpt }}</p>
+      <button class="btn mt-2"    (click)="readMore.emit()">Read More</button>
+    </div>
+  </div>
+</div>

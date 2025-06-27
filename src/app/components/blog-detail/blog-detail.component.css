@@ -1,0 +1,73 @@
+/* Make the outer wrapper a feature‐card */
+.blog-card {
+  position: relative;
+  width: 90%;
+  max-width: 80rem;
+  margin: 2rem auto;
+  aspect-ratio: unset !important;
+  height: auto !important;
+}
+
+/* Teal backdrop block */
+.blog-card .backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: var(--blue-green);
+  border-radius: 4px;
+  z-index: 1;
+  transform: translate(2rem, -2rem);
+}
+
+/* Bring your detail container above the backdrop */
+.blog-card .blog-detail-container {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  button.btn-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+ 
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+    color: var(--dark-red);
+    font-size: 2.5rem;
+  }
+  small {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+  }
+  .content {
+    p {
+      line-height: 1.6;
+      color: var(--text-color);
+      margin: 0;
+    }
+  }
+}
+
+/* Hover lift on the whole card */
+.blog-card.hoverable {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+}

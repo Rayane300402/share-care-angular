@@ -16,6 +16,8 @@ import { FlagsComponent } from './components/flags/flags.component';
 import { HeroComponent } from './components/hero-header/hero/hero.component';
 import { AboutContainerComponent } from './components/about-container/about-container.component';
 import { SubscribeContainerComponent } from './components/subscribe-container/subscribe-container.component';
+import { BlogContainerComponent } from './components/blog-container/blog-container.component';
+import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { SubscribeContainerComponent } from './components/subscribe-container/su
     FlagsComponent,
     HeroComponent,
     AboutContainerComponent,
-    SubscribeContainerComponent
+    SubscribeContainerComponent,
+    BlogContainerComponent,
+    BlogDetailComponent
   ],
   imports: [
     BrowserModule,

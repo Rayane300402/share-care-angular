@@ -1,0 +1,19 @@
+<div class="blog-card feature-card  hoverable">
+
+    <div class="backdrop"></div>
+    <div class="blog-detail-container">
+        <button class="btn btn-link mb-3" (click)="back.emit()" style=" font-weight: 600 !important;">
+            <i class="bi bi-chevron-left"></i> Back
+        </button>
+
+        <h2>{{ post.title }}</h2>
+        <small>Written {{ post.date }} {{ post.author }}</small>
+
+        <img [src]="post.imageUrl" class="img-fluid my-4" alt="{{ post.title }}">
+
+        <div class="content">
+            <p>{{ post.content }}</p>
+        </div>
+    </div>
+
+</div>

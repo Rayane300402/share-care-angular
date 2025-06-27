@@ -19,3 +19,12 @@
   </div>
   <img class="img-fluid" src="../../../../assets/about.png" alt="giving-food" width="64%">
 </section>
+
+<section class="about-header" *ngIf="page === 'blog'" style="align-items: flex-start !important;   height: 50vh;">
+  <app-flags title="Our Blogs"></app-flags>
+  <img class="img-fluid" src="../../../../assets/blogs.png" alt="giving-food" width="35%">
+</section>
+
+<section class="about-header" *ngIf="page === 'contact'" style="align-items: flex-start !important;   height: 50vh;">
+  <app-flags title="Contact Us"></app-flags>
+</section>

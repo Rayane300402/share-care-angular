@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { BLOGS } from '../../Utils/blog.utils';
+import { Blog } from '../../Utils/Models/blog.model';
 @Component({
   selector: 'app-blog-page',
   standalone: false,
@@ -7,5 +8,21 @@ import { Component } from '@angular/core';
   styleUrl: './blog-page.component.css'
 })
 export class BlogPageComponent {
+
+  public blogs: Blog[] = [];
+    selectedPost: Blog | null = null;
+
+  ngOnInit() {
+    this.blogs = BLOGS;
+  }
+
+
+    selectPost(post: Blog) {
+    this.selectedPost = post;
+  }
+
+  clearSelection() {
+    this.selectedPost = null;
+  }
 
 }

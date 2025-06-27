@@ -1,1 +1,19 @@
-<p>blog-page works!</p>
+
+<app-hero page="blog"></app-hero>
+
+<div *ngIf="!selectedPost" class="row gx-4 gy-4 justify-content-center">
+  <div 
+    class="col-12 col-md-6 col-lg-4" 
+    *ngFor="let post of blogs"
+  >
+    <app-blog-container [post]="post"  (readMore)="selectPost(post)"></app-blog-container>
+  </div>
+</div>
+
+
+<div *ngIf="selectedPost">
+  <app-blog-detail 
+    [post]="selectedPost" 
+    (back)="clearSelection()"
+  ></app-blog-detail>
+</div>

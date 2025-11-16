@@ -1,27 +1,41 @@
-# ShareCareAngular
+# ShareCare 🍽️  
+A web platform designed to reduce food waste in Lebanon by connecting donors with NGOs and individuals in need.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+## 🌍 Overview  
+ShareCare is a web application built with **Angular** and **Bootstrap** to address Lebanon’s growing food insecurity and the alarming levels of food waste. After years of economic collapse, the aftermath of the failed revolution, and the impacts of the COVID-19 pandemic, Lebanon has experienced severe food shortages and drastic price inflation. Meanwhile, large quantities of edible food continue to be discarded daily by households, restaurants, supermarkets, and food suppliers.
 
-## Development server
+ShareCare bridges this gap by enabling organizations and individuals with surplus food to easily donate it, while empowering NGOs and verified recipients to request or collect what they need.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🎯 Key Features  
+- **Food Donation System:**  
+  Donors can offer surplus food instead of discarding it, reducing waste and supporting local communities.
 
-## Code scaffolding
+- **NGO Collaboration:**  
+  NGOs can view, request, and coordinate food pickups or distributions, improving operational efficiency.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Recipient Support:**  
+  Individuals in need receive food through partnering NGOs, ensuring safe and fair distribution.
 
-## Build
+- **Education & Sustainability Hub:**  
+  Integrated learning section promoting sustainable habits, food safety awareness, and waste reduction.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🏆 Recognition  
+ShareCare ranked **Top 30 in the MENA Region** in the **Google Solution Challenge**, highlighting its social impact and technical merit.
 
-## Running unit tests
+## 🚀 Live Website  
+Access the deployed application here:  
+🔗 **https://sharecareang.netlify.app/**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🇱🇧 Why This Matters  
+Lebanon is facing one of the most severe crises in its history—economic collapse, rising poverty, and worsening food insecurity. At the same time, significant amounts of edible food are routinely wasted due to lack of coordination between food providers and charitable organizations.
 
-## Running end-to-end tests
+ShareCare aims to transform this challenge into an opportunity by:  
+- Recovering surplus food  
+- Empowering NGOs  
+- Supporting vulnerable families  
+- Promoting sustainability  
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Together, these efforts contribute to a more resilient and compassionate environment for Lebanese communities.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

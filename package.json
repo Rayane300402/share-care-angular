@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "cross-env SASS_QUIET_DEPS=true ng serve",
-    "build": "cross-env SASS_QUIET_DEPS=true ng build",
+    "build": "cross-env SASS_QUIET_DEPS=true ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
